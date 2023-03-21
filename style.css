@@ -76,10 +76,25 @@ h1 {
     outline: none;
     transition: 0.4s;
     border-bottom: 1px solid black;
+    padding-left: 0;
+    
   }
 
   p {
     font-size: 10px;
+    color:hsl(238, 29%, 16%);
+  }
+
+  .btn-text {
+      display: flex;
+      flex-direction: row;
+
+    
+  }
+
+  .btn-text > img {
+      width: auto;
+      height: 10px;
   }
 
  
