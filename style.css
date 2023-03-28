@@ -14,7 +14,7 @@ body {
 
 .container {
     max-width: 360px;
-    height: 550px;
+    height: 33rem;
     margin: auto;
     background-color: white;
     border-radius: 20px;
@@ -30,7 +30,7 @@ body {
 
 
 .mobile-img {
-    width: 50%;
+    max-width: 50%;
     margin: auto;
     display: block;
     object-fit: cover;
@@ -96,5 +96,18 @@ h1 {
       width: auto;
       height: 10px;
   }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 360px;
+        height: 33rem;
+        margin: auto;
+        background-color: white;
+        border-radius: 20px;
+        margin-top: 3rem;
+        
+    }
+}
 
  
