@@ -1,9 +1,9 @@
 :root {
- --bg-clr: hsl(273, 75%, 66%);
+    --bg-clr: hsl(273, 75%, 66%);
 }
 
 * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
 
@@ -19,7 +19,7 @@ body {
     background-color: white;
     border-radius: 20px;
     margin-top: 3rem;
-    
+
 }
 
 .text-container {
@@ -35,8 +35,9 @@ body {
     display: block;
     object-fit: cover;
     object-position: center;
-    margin-bottom:-125px; /* 156px is half of #userAvatar's height */
-    margin-left:calc(275px - 150px);
+    margin-bottom: -125px;
+    /* 156px is half of #userAvatar's height */
+    margin-left: calc(275px - 150px);
 }
 
 .mobile-background {
@@ -45,8 +46,8 @@ body {
     display: block;
     object-fit: cover;
     object-position: center;
-    margin-bottom:-220px; 
-    margin-left:calc(275px - 150px);
+    margin-bottom: -220px;
+    margin-left: calc(275px - 150px);
 }
 
 .mobile-imgs {
@@ -64,9 +65,9 @@ h1 {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-  }
+}
 
-  .accordion {
+.accordion {
     background-color: white !important;
     cursor: pointer;
     padding: 18px;
@@ -75,39 +76,90 @@ h1 {
     border: none;
     outline: none;
     transition: 0.4s;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid hsl(240, 5%, 91%) !important;
     padding-left: 0;
-    
-  }
+    color: hsl(240, 6%, 50%);
 
-  p {
+}
+
+p {
     font-size: 10px;
-    color:hsl(238, 29%, 16%);
-  }
+    color: hsl(240, 6%, 50%);
+}
 
-  .btn-text {
-      display: flex;
-      flex-direction: row;
+.btn-text {
+    display: flex;
+    flex-direction: row;
+}
 
-    
-  }
+.btn-text>img {
+    width: auto;
+    height: 10px;
+}
 
-  .btn-text > img {
-      width: auto;
-      height: 10px;
-  }
+.desktop-img {
+    display: none;
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .container {
-        max-width: 360px;
-        height: 33rem;
+        max-width: 900px;
+        height: 30rem;
         margin: auto;
         background-color: white;
         border-radius: 20px;
-        margin-top: 3rem;
+        margin-top: 6rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    h1 {
+        display: block;
+    }
+
+    .text-container {
+        width: 50%;
+        padding-top: 10px !important;
+    }
+
+
+    .mobile-imgs {
+        display: none;
+    }
+
+    .desktop-img {
+        width: 50%;
+        margin: auto;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #box {
+        background: url(/images/illustration-box-desktop.svg) no-repeat center;
+        width: 92.3%;
+        height: 300px;
+        position: absolute;
+        margin-top: 150px;
+        margin-right: 300px;
         
     }
-}
 
- 
+    #shadow {
+        background: url(/images/bg-pattern-desktop.svg) no-repeat center;
+        width: 92.3%;
+        height: 300px;
+        position: absolute;
+        margin-top: 50px;
+        margin-right: 300px;
+        z-index: 1;
+        
+    }
+
+
+
+
+
+
+}
